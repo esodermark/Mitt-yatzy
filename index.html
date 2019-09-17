@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script src="https://code.jquery.com/
+jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="container">
     <table>
         <tr>
             <th>Yatzy</th>
@@ -50,17 +54,27 @@
             <td id="total"></td>
         </tr>
     </table>
-    <p id="dice"></p>
 
     <div class="diceImages">
-        <img src="images/dice6.png">
-        <img src="images/dice6.png">
-        <img src="images/dice6.png">
-        <img src="images/dice6.png">
-        <img src="images/dice6.png">
+        <input type="checkbox" id="checkbox0" class="chkbx">
+        <label for="checkbox0"><img src="images/dice6.png"></label>
+        <input type="checkbox" id="checkbox1" class="chkbx">
+        <label for="checkbox1"><img src="images/dice6.png"></label>
+        <input type="checkbox" id="checkbox2" class="chkbx">
+        <label for="checkbox2"><img src="images/dice6.png"></label>
+        <input type="checkbox" id="checkbox3" class="chkbx">
+        <label for="checkbox3"><img src="images/dice6.png"></label>
+        <input type="checkbox" id="checkbox4" class="chkbx">
+        <label for="checkbox4"><img src="images/dice6.png"></label>
     </div>
-    
-    <button id="calcSum">Räkna ut</button>
-    <button id="rollDice">Kasta tärningar</button>
+</div>
+<div class="container2">
+    <div class="btnContainer">
+        <button id="calcSum">Räkna ut</button>
+    </div>
+    <div class="btnContainerThrowDice">
+            <button id="rollDice">Kasta tärningar</button>
+    </div>
+</div>
 </body>
 </html>
