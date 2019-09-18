@@ -54,6 +54,16 @@ td.tdInput{
     border-right:none;
 }
 
+.totalInput{
+    border-bottom:none;
+    border-right: none;
+}
+
+.total{
+    border-right: 1px solid #888;
+    border-bottom:none;
+}
+
 img{
     max-width: 15vh;
     transition: ease-out 0.2s;
