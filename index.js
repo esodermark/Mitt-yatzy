@@ -16,8 +16,11 @@ function calcSum(){
     let ones = document.getElementById("ones").valueAsNumber;
     let twos = document.getElementById("twos").valueAsNumber;
     let threes = document.getElementById("threes").valueAsNumber;
+    let fours = document.getElementById("fours").valueAsNumber;
+    let fives = document.getElementById("fives").valueAsNumber;
+    let sixes = document.getElementById("sixes").valueAsNumber;
     
-    let sum = ones + twos + threes;
+    let sum = ones + twos + threes + fours + fives + sixes;
     document.getElementById("sum").value = sum;
     
     if (sum >=63){
@@ -62,4 +65,20 @@ function selectFreeze(){
             document.querySelectorAll("img")[i].style.opacity = "1";
         }
         }
+}
+
+document.addEventListener("DOMContentLoaded", function(event){
+    let resetDices = document.getElementById("resetDices");
+    resetDices.addEventListener("click", unfreeze);
+});
+
+function unfreeze(){
+    for (let i = 0; i < 5; i++) {
+        let checkbox = document.getElementById("checkbox" + i);
+
+    if (checkbox.checked){
+        !checkbox.checked;
+        document.querySelectorAll("img")[i].style.opacity = "1";
+    }
+    }
 }

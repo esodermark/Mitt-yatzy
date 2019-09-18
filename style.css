@@ -1,21 +1,69 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
 .container{
     display:flex;
     flex-wrap: wrap;
-    align-items: center;
-}
-
-.container2{
-    display:flex;
-    flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
+    margin: 70px auto 0 auto;
 }
 
 table{
-    padding: 5vh;
+    padding: 10px;
+}
+
+table input{
+    border: none;
+    text-align: center;
+    font-family:'Chilanka', cursive;
+    color: #333333;
+    font-size: 25px;
+}
+
+th{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 10;
+    letter-spacing: 2px;
+    color: #333333;
+    font-size: 2.5em;
+    padding: 5px;
+    border-bottom: solid 1px #888;
+}
+
+td{
+    font-family:'Chilanka', cursive;
+    color: #333333;
+    text-align: center;
+    border-bottom: solid 1px #888;
+    border-right: solid 1px #888;
+    font-size: 1.6em;
+    padding: 5px;
+}
+
+th.yatzy{
+    font-family:'Chilanka', cursive;
+    font-size: 5em;
+    color: #333333;
+    border-right: 1px solid #888;
+    text-decoration: none;
+}
+
+td.tdInput{
+    border-right:none;
 }
 
 img{
     max-width: 15vh;
+    transition: ease-out 0.2s;
+    border-color: gold;
+    border-radius: 20px;
+}
+
+img:hover{
+    background-color: gold;
+    max-width: 15.5vh;
 }
 
 .diceImages{
@@ -23,19 +71,45 @@ img{
     padding: 5vh;
 }
 
-.btnContainerThrowDice{
-    padding: 20px;
-    margin-left: 280px;
-}
-
-#rollDice{
+.rollDice{
     padding: 15px;
-    border: none;
+    border-style: solid;
+    border-color: goldenrod;
+    border-width: 1px;
     border-radius: 8px;
-    background-color: #333;
+    background-color :gold;
     color: #fff;
-    font-size: 1.1em;
+    font-size: 1.3em;
     font-weight: 400;
     font-family: Arial, Helvetica, sans-serif;
+    transition: ease-in-out 0.1s;
+    margin-left: 0;
+    margin-top: 20px;
 }
 
+.rollDice#resetDices{
+    margin: 0;
+    margin-left:5px;
+}
+
+button.rollDice:hover{
+    border-width: 2px;
+    border-color: orange;
+    border-style: solid;
+    box-shadow: 3px 3px 2px 3px #f4f4f4;
+}
+
+#calcSum{
+ font-family: 'Open Sans Condensed', sans-serif;
+ font-weight: 500;
+ letter-spacing: 2px;
+ border-style: none;
+ background-color: #fff;
+ font-size: 1.8em;
+ margin-top: 20px;
+ margin-left: 60px;
+}
+
+#calcSum:hover{
+    font-weight: 800;
+}
